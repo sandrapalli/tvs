@@ -1,6 +1,6 @@
 FROM ubuntu: latest
 RUN apt-get update
-RUN apt-get install jdk-8 wget
+RUN apt-get install wget
 RUN /opt/tomcat/
 RUN wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz -P /tmp
 RUN tar -xvf apache-tomcat-9.0.27.tar.gz
